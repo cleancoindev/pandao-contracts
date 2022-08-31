@@ -9,7 +9,9 @@
     "ethereum": "npx buidler node",
     "console": "npx buidler console",
     "test": "npx buidler test",
-    "coverage": "yarn run compile && npx buidler coverage --temp artifacts"
+    "coverage": "yarn run compile && npx buidler coverage --temp artifacts",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -41,6 +43,8 @@
     "@pie-dao/proxy": "^0.0.6",
     "dotenv": "^8.2.0",
     "scrypt": "^6.0.3",
-    "solidity-coverage": "^0.7.5"
-  }
+    "solidity-coverage": "^0.7.12",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
